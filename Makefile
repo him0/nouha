@@ -8,10 +8,7 @@ setup:
 .PHONY: build
 build: cmd/nouha.go
 	go build -o bin/nouha cmd/nouha.go
-
-.PHONY: run
-run: bin/nouha
-	./bin/nouha
+	go build -o bin/meisou cmd/meisou.go
 
 .PHONY: install
 install: build
