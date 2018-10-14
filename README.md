@@ -1,6 +1,6 @@
 # nouha
 
-docomo dev api を利用して音声を生成する。
+脳波する。
 
 ## build
 ```
