@@ -14,3 +14,6 @@
 *.out
 
 vendor
+
+bin/*
+!bin/.keep
