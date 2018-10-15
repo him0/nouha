@@ -58,7 +58,7 @@ func main() {
 					bar.Set(int(meditation))
 					if meditation > border {
 						bar.Finish()
-						fmt.Println("目標達成めっちゃ集中してる！！！")
+						fmt.Println("瞑想度が目標値に達しました。ほとんど仏だ！！！")
 						if err := robot.Stop(); err == nil {
 							if command != "" {
 								exec.Command(command)
