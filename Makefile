@@ -6,13 +6,14 @@ setup:
 	@dep ensure --vendor-only
 
 .PHONY: build
-build: cmd/nouha.go
-	go build -o bin/nouha cmd/nouha.go
-	go build -o bin/meisou cmd/meisou.go
+build: cmd/nouha/main.go cmd/nouha/main.go
+	go build -o bin/nouha cmd/nouha/main.go
+	go build -o bin/meisou cmd/meisou/main.go
 
 .PHONY: install
 install: build
-	@go install
+	@go install github.com/him0/nouha/cmd/nouha
+	@go install github.com/him0/nouha/cmd/meisou
 
 .PHONY: lint
 lint: govet gofmt golint goimports
